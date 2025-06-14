@@ -1,0 +1,13 @@
+{
+    "name": "about_me-ui",
+    "version": "1.0.0",
+    "description": "ui for about me page",
+    "main": "",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "rjsmall90",
+    "license": "ISC",
+    "dependencies": {    }
+  }
+  
