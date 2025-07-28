@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #2c2c2c;
   --foreground: #171717;
 }
 
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #2c2c2c;
     --foreground: #ededed;
   }
 }
@@ -36,33 +36,94 @@ body, html {
       height: 100%;
     }
 
-    .parallax {
-      /* The image used */
-      background-image: url("../assets/images/mic_checker.png");
+.parallax-intro {
+  /* The image used */
+  background-image: url("../assets/images/mic_checker.png");
 
-      /* Set a specific height */
-      min-height: 100vh;
+  /* Set a specific height */
+  min-height: 100vh;
 
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    .content {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 7rem;
-      font-family: alteHaasBold;
-      color: #f7f7f7;
-      padding: 2rem;
-    }
+.parallax-skills {
+  /* The image used */
+  background-image: url("../assets/images/ball_is_life.png");
 
-/* body {
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-btp {
+  /* The image used */
+  background-image: url("../assets/images/this_is_why_we_do_it.png");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  font-family: alteHaasBold;
+  color: #f7f7f7;
+  padding: 2rem;
+}
+
+.about-me {
+  height: 50vh;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 2rem;
+  font-family: alteHaas;
+  color: #F72585;
+  padding: 2rem;
+}
+
+.portfolio {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  font-family: alteHaasBold;
+  color: #f7f7f7;
+  padding: 2rem;
+}
+
+.btp-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  font-family: alteHaasBold;
+  color: #f7f7f7;
+  padding: 2rem;
+}
+
+body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+}
