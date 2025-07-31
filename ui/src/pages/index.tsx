@@ -1,11 +1,11 @@
 // import Image from "next/image";
 // import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/navbar"
-import Intro from "./routes/intro"
-import About from "./routes/about"
-import Portfolio from "./routes/portfolio"
-import Blog from "./routes/blog";
-import BTP from "./routes/btp"
+import Intro from "./#/intro"
+import About from "./#/about"
+import Portfolio from "./#/portfolio"
+import Blog from "./#/blog";
+import BTP from "./#/btp"
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

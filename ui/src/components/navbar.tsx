@@ -26,7 +26,7 @@ export default function Navbar(): JSX.Element {
       <div className="text-xl font-bold">MyLogo</div>
       <ul className="flex gap-6 text-lg">
         <li>
-          <a href="/routes/intro" className="hover:underline">Home</a>
+          <a href="#intro" className="hover:underline">Home</a>
         </li>
         <li>
           <a href="#about" className="hover:underline">About</a>
