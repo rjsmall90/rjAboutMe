@@ -34,51 +34,36 @@ body, html {
       padding: 0;
       font-family: sans-serif;
       height: 100%;
-    }
+      background: var(--background);
+      color: var(--foreground);
+}
 
-.parallax-intro {
-  /* The image used */
+#intro {
   background-image: url("../assets/images/mic_checker.png");
-
-  /* Set a specific height */
-  min-height: 100vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.parallax-skills {
-  /* The image used */
+#portfolio {
   background-image: url("../assets/images/ball_is_life.png");
-
-  /* Set a specific height */
-  min-height: 100vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.parallax-btp {
-  /* The image used */
+#skills {
+
+}
+
+#btp {
   background-image: url("../assets/images/this_is_why_we_do_it.png");
+}
 
-  /* Set a specific height */
+.parallax {
   min-height: 100vh;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.content {
+.intro-content {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -101,7 +86,7 @@ body, html {
   padding: 2rem;
 }
 
-.portfolio {
+.portfolio-content {
   height: 75vh;
   display: flex;
   align-items: center;
@@ -121,9 +106,4 @@ body, html {
   font-family: alteHaasBold;
   color: #f7f7f7;
   padding: 2rem;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
 }

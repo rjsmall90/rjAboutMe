@@ -2,12 +2,13 @@
 
 const Portfolio = () => {
     return (
-        <div className = "parallax-skills">
-            <div className="portfolio">
+        <div id="portfolio" className = "parallax">
+            <div className="portfolio-content">
                 <h3> Portfolio Portfolio </h3>
             </div>
             <div id="skills" className="">
                 {/* {skills("test_prop")} */}
+                {/* Three rounded boxes (neon pink border) load up once page scrolls in with three headings and associated skills*/}
             </div>
         </div>
     )
