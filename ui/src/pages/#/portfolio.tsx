@@ -3,6 +3,7 @@ import ScrollReveal from "@/components/scroll_reveal";
 
 const Portfolio = () => {
     return (
+<<<<<<< HEAD
         <div id="portfolio" className="flex flex-col justify-center">
             <div className="page-title">
                 <h3>Skills</h3>
@@ -14,6 +15,13 @@ const Portfolio = () => {
                     </div>
                 </ScrollReveal>
             </div>
+=======
+        <div id="portfolio" className="segment">
+            <div className="page-title">
+                <h3> Portfolio Portfolio </h3>
+            </div>
+            <div id="skills"></div>
+>>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
             <div id="git_widget"></div>
             <div id="medium_widget"></div>
             <div id="li-widget"></div>

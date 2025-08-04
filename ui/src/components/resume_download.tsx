@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 import Image from 'next/image'
 import ScrollReveal from "@/components/scroll_reveal"
@@ -46,6 +47,20 @@ export default function ResumeDownload(){
                     </div>
                 </div>
             </ScrollReveal>
+=======
+
+
+export default function ResumeDownload(){
+    return (
+        <div className="segment">
+            <div className="content">
+                {/* placeholder quote*/}
+                <h1>"This Will Be Where You Can Download My Resume </h1>
+                <div className="grid">
+
+                </div>
+            </div>
+>>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
         </div>
     )
 }

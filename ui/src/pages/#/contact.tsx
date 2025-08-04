@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import ContactForm from "@/components/contact_form"
 
 const Contact = () => {
@@ -9,6 +10,16 @@ const Contact = () => {
             <div>
                 <ContactForm />
             </div>
+=======
+
+const Contact = () => {
+    return ( 
+        <div id="contact" className="segment">
+            <div className="btp-content">
+                <h2> This Will Be The Contact Form</h2>
+            </div>
+
+>>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
         </div>
     )
 }

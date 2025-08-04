@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 import { useEffect, useState } from 'react'
 
@@ -46,6 +47,16 @@ export default function GeneratedQuote(){
             <div className="quote w-full flex flex-col">
                 <h4 className="text-left"> &quot;{quote}&quot; </h4> 
                 <p className="text-right mt-2"> - {quotee} </p>
+=======
+
+
+export default function GeneratedQuote(){
+    return (
+        <div className="segment">
+            <div className="content">
+                {/* placeholder quote*/}
+                <h1>"This Will Be Where The Inspo Quote Goes." </h1>
+>>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
             </div>
         </div>
     )

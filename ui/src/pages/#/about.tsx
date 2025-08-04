@@ -2,6 +2,7 @@ import Image from 'next/image'
 import ScrollReveal from "@/components/scroll_reveal"
 // import SlideDown from "@/components/slide_reveal"
 
+<<<<<<< HEAD
 import family_pic from "../../assets/images/family_man.png"
 import ry_and_kids from "../../assets/images/why_we_do_it.png"
 import solo_shot from "../../assets/images/well_actually.png"
@@ -42,6 +43,14 @@ const About = () => {
                     </div>
                 </div>
                 </ScrollReveal>
+=======
+const About = () => {
+    return (
+        <div id="about-me" className="parallax relative">
+            <div className="page-title">
+                <p> This Is The New About Me Page </p>
+            </div>
+>>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
             <div className="top-fade" />
         </div>
     )

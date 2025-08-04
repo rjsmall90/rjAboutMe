@@ -6,7 +6,20 @@ import BTP from "./#/btp"
 import Contact from "./#/contact"
 import GeneratedQuote from "@/components/generated_quote";
 import ResumeDownload from "@/components/resume_download";
+<<<<<<< HEAD
 import Footer from "@/components/footer"
+=======
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+>>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
 
 export default function Home() {
   return (
@@ -16,11 +29,17 @@ export default function Home() {
         <Intro />
         <GeneratedQuote />
         <About />
+        <ResumeDownload />
         <Portfolio />
+<<<<<<< HEAD
         <ResumeDownload />
         <BTP />
         <Contact />
         <Footer />
+=======
+        <BTP />
+        <Contact />
+>>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
       </main>
     </div>
   );
