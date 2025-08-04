@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ScrollToTop from "./scroll_to_top";
 
 export default function Navbar(): JSX.Element {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -26,14 +27,9 @@ export default function Navbar(): JSX.Element {
       <div className="text-xl font-bold">MyLogo</div>
       <ul className="flex gap-6 text-lg">
         <li>
-          <a href="#intro" className="hover:underline">Home</a>
+          <ScrollToTop />
         </li>
-        <li>
-          <a href="#about" className="hover:underline">About</a>
-        </li>
-        <li>
-          <a href="#contact" className="hover:underline">Contact</a>
-        </li>
+    
       </ul>
     </nav>
   );

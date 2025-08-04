@@ -4,8 +4,10 @@ import Navbar from "../components/navbar"
 import Intro from "./#/intro"
 import About from "./#/about"
 import Portfolio from "./#/portfolio"
-import Blog from "./#/blog";
 import BTP from "./#/btp"
+import Contact from "./#/contact"
+import GeneratedQuote from "@/components/generated_quote";
+import ResumeDownload from "@/components/resume_download";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -23,10 +25,12 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Intro />
+        <GeneratedQuote />
         <About />
+        <ResumeDownload />
         <Portfolio />
-        <Blog />
         <BTP />
+        <Contact />
       </main>
     </div>
   );
