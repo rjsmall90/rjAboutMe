@@ -81,6 +81,13 @@ body, html {
   padding: 2rem;
 }
 
+.quote {
+  font-family: alteHaas;
+  font-style: italic;
+  color: #F72585;
+  padding: 2rem;
+}
+
 .segment {
   background-color: #2c2c2c;
   display: flex;
