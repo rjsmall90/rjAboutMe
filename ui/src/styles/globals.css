@@ -82,6 +82,7 @@ body, html {
 }
 
 .quote {
+  font-size: 2rem;
   font-family: alteHaas;
   font-style: italic;
   color: #F72585;
