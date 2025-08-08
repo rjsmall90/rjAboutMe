@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from 'react'
 
 type Quote = {
@@ -32,17 +33,13 @@ export default function GeneratedQuote(){
         try{
             fetchQuotes().then((quotes) => {
                 const index = Math.floor(Math.random() * 14-0+1)+1
-                console.log(quotes[index])
                 setQuote(quotes[index].quote)
                 setQuotee(quotes[index].quotee)
-                
             })
         } catch(err) {
             console.log("Error Fetching Quote", err)
         }
     }, [])
-
-    console.log(quote, quotee)
 
     return (
         <div className="segment">

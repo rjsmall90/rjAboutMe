@@ -24,7 +24,7 @@ export default function Navbar(): JSX.Element {
         isScrolled ? "h-14" : "h-28"
       }`}
     >
-      <div className="text-xl font-bold">MyLogo</div>
+      <div className="text-xl font-bold">{"{RyanTheCreator}"}</div>
       <ul className="flex gap-6 text-lg">
         <li>
           <ScrollToTop />
