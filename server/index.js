@@ -1,12 +1,16 @@
 // require('dotenv').config();
+import cors from 'cors'
 import express from 'express'
 import nodemailer from 'nodemailer'
 
 import  { fetchQuotes } from './data/quotes.js'
 import { fetchSkills } from './data/skills.js'
 
+
 const server = express()
 const port = 8000
+
+server.use(cors())
 
 server.get('/quotes', async function(req, res) {
     const response = await fetchQuotes(req, res)

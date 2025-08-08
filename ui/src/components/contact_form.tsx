@@ -38,20 +38,22 @@ export default function ContactForm(){
     return (
         <div className="mx-auto flex flex-col max-w-sm items-center gap-x-4 rounded-xl p-6 shadow-lg border-4 border-[#F72585]">
             <input 
-                className="border rounded border-[#F72585] field-sizing-fixed p-2 mb-4 mt-4 w-2xs" 
+                className="border rounded border-[#F72585] field-sizing-fixed p-2 mb-4 mt-4 w-2xs text-[#F7F7F7]"
+                value={name} 
                 defaultValue="Enter Name" 
                 onChange={(e)=> setName(e.target.value)} />
             <input 
-                className="border rounded border-[#F72585] field-sizing-fixed p-2 mb-4 w-2xs" 
+                className="border rounded border-[#F72585] field-sizing-fixed p-2 mb-4 w-2xs text-[#F7F7F7]"
+                value={email}
                 defaultValue="Enter E-mail" 
                 onChange={(e)=> setEmail(e.target.value)} />
             <textarea 
-                className="border rounded border-[#F72585] w-2xs h-20 p-5 mb-4" 
+                className="border rounded border-[#F72585] w-2xs h-20 p-5 mb-4 text-[#F7F7F7]" 
                 onChange={(e)=> setMessage(e.target.value)}
             > 
                 Enter Message: 
             </textarea>
-            <button className="px-4 py-2 bg-[#F72585] text-white rounded hover:bg-pink-700" onClick={sendEmail}>Submit</button>
+            <button className="px-4 py-2 bg-[#F72585] text-[#F7F7F7] rounded hover:bg-pink-700" onClick={sendEmail}>Submit</button>
         </div>
     )
 }
