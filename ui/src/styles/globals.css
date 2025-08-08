@@ -54,6 +54,7 @@ body, html {
 
 .parallax {
   min-height: 100vh;
+  width: 100vh;
   
   background-attachment: fixed;
   background-position: center;
@@ -62,7 +63,7 @@ body, html {
 }
 
 .page-title {
-  height: 100vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
