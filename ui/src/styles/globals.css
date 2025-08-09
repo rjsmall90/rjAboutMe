@@ -136,3 +136,59 @@ body, html {
   from, to { border-color: transparent }
   50% { border-color: #f7f7f7; }
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .intro-header {
+    font-size: 3rem; /* was 10rem */
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem; /* was 7rem */
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .content,
+  .quote {
+    font-size: 1.2rem; /* was 2rem */
+    padding: 1rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .image_caption {
+    font-size: 14px; /* smaller for mobile */
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  /* Parallax fallback for mobile */
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+  .segment {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .intro-header {
+    font-size: 2.5rem;
+  }
+  .page-title {
+    font-size: 1.8rem;
+  }
+  .content,
+  .quote {
+    font-size: 1rem;
+  }
+}
