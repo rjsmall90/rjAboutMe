@@ -1,22 +1,19 @@
 "use client"
 import { useState } from 'react'
 
-const Intro = () => {
+const TypeWriter = () => {
     const [ firstTrigger, setFirstTrigger ] = useState<string>("invisible")
     const [ secondTrigger, setSecondTrigger ] = useState<string>("invisible")
     setTimeout(() => setFirstTrigger("visible"), 2500)
     setTimeout(() => setSecondTrigger("visible"), 5000)
 
-    return (
-        <div id="intro" className="parallax">
-            <div className="flexbox flex-col size-fit intro-header mt-20">
+    return(
+           <div className="flexbox flex-col size-fit">
                 <p className="typewriter"> Hi! </p>
                 <p className={`typewriter ${firstTrigger}`} style={{animationDelay: '2.5s, 0s'}}> ..it&apos;s me. </p>
                 <p className={`typewriter ${secondTrigger}`} style={{animationDelay: '5s, 0s'}}> ..Ryan. </p>
             </div>
-            <div className="top-fade" />
-        </div>
     )
 }
 
-export default Intro;
+export default TypeWriter

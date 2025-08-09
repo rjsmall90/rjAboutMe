@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import { ArrowUpIcon } from "@heroicons/react/24/solid";
 
-export default function ScrollToTop(): JSX.Element | null {
-  const [isVisible, setIsVisible] = useState(false);
+export default function ScrollToTop(){
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +27,7 @@ export default function ScrollToTop(): JSX.Element | null {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 p-3 bg-black text-white rounded-full shadow-lg hover:bg-gray-800 transition-colors"
+      className="fixed bottom-6 right-6 p-3 bg-[#2c2c2c] text-[#F7F7F7] rounded-full shadow-lg hover:bg-gray-800 transition-colors"
       aria-label="Scroll to top"
     >
       <ArrowUpIcon className="w-6 h-6" />
