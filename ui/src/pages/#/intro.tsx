@@ -1,12 +1,19 @@
 "use client"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Intro = () => {
     const [ firstTrigger, setFirstTrigger ] = useState<string>("invisible")
     const [ secondTrigger, setSecondTrigger ] = useState<string>("invisible")
-    setTimeout(() => setFirstTrigger("visible"), 2500)
-    setTimeout(() => setSecondTrigger("visible"), 5000)
-
+   
+    useEffect(() => {
+        const firstTimer = setTimeout(() => setFirstTrigger("visible"), 2500);
+        const secondTimer = setTimeout(() => setSecondTrigger("visible"), 5000);
+        return () => {
+            clearTimeout(firstTimer);
+            clearTimeout(secondTimer);
+        };
+    }, []);
+    
     return (
         <div id="intro" className="parallax">
             <div className="flexbox flex-col size-fit intro-header mt-20">
