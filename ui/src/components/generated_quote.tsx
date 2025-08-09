@@ -7,7 +7,7 @@ type Quote = {
 };
 
 async function fetchQuotes(){
-    const url =  "http://localhost:8000/quotes";
+    const url = `${process.env.NEXT_PUBLIC_SERVER_ADDRESS}/quotes`;
     let data;
     try {
         const response = await fetch(url)
@@ -25,13 +25,13 @@ async function fetchQuotes(){
 }
 
 export default function GeneratedQuote(){
-    const [quote, setQuote] = useState("")
-    const [quotee, setQuotee] = useState("")
-    
+    const [quote, setQuote] = useState<string>("")
+    const [quotee, setQuotee] = useState<string>("")
 
     useEffect(()=>{
         try{
-            fetchQuotes().then((quotes) => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            fetchQuotes().then((quotes: any) => {
                 const index = Math.floor(Math.random() * 14-0+1)+1
                 setQuote(quotes[index].quote)
                 setQuotee(quotes[index].quotee)
@@ -44,7 +44,7 @@ export default function GeneratedQuote(){
     return (
         <div className="segment">
             <div className="quote w-full flex flex-col">
-                <h4 className="text-left"> "{quote}" </h4> 
+                <h4 className="text-left"> &quot;{quote}&quot; </h4> 
                 <p className="text-right mt-2"> - {quotee} </p>
             </div>
         </div>

@@ -10,11 +10,10 @@ interface RevealProps {
 export default function ScrollReveal({
   children,
   className = "",
-  animateClass = "",
   threshold = 0.1
-}: RevealProps): JSX.Element {
+}: RevealProps){
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
