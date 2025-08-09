@@ -5,7 +5,7 @@ const Portfolio = () => {
     return (
         <div id="portfolio" className="flex flex-col justify-center">
             <div className="page-title">
-                <h3>Portfolio</h3>
+                <h3>Skills</h3>
             </div>
             <div id="skills">
                 <ScrollReveal className="delay-300">                 
