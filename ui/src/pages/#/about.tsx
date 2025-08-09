@@ -11,7 +11,7 @@ const About = () => {
         <div id="about-me" className="parallax relative">
                 <div className="page-title">
                     <ScrollReveal>
-                        <h1>About Me </h1> 
+                        <h1>3 Things About Me</h1> 
                     </ScrollReveal>
                 </div>
                 <ScrollReveal className="delay-500">

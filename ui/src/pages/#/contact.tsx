@@ -4,7 +4,7 @@ const Contact = () => {
     return ( 
         <div id="contact" className="flex flex-col ">
             <div className="page-title">
-                <h2>Contact</h2>
+                <h2>Drop A Line</h2>
             </div>
             <div>
                 <ContactForm />
