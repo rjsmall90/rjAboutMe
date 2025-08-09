@@ -9,7 +9,7 @@ export default function ResumeDownload(){
         <div className="relative">
             <div className="page-title">
                 <ScrollReveal>
-                    <h1> Download Resume </h1> 
+                    <h1> Hiring? </h1> 
                 </ScrollReveal>
             </div>
             <ScrollReveal className="delay-300">
@@ -22,7 +22,7 @@ export default function ResumeDownload(){
                         >
                             <Image src={paper} alt="resume icon" />
                         </a>
-                        <h1 className="image_caption text-center mt-3"> Front End Engineer </h1>
+                        <h1 className="image_caption text-center mt-3"> Front End Engineer Resume </h1>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <a 
@@ -32,7 +32,7 @@ export default function ResumeDownload(){
                         >
                             <Image src={paper} alt="resume icon" />
                         </a>
-                        <h1 className="image_caption text-center mt-3"> Full Stack Engineer </h1>
+                        <h1 className="image_caption text-center mt-3"> Full Stack Engineer Resume </h1>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <a 
@@ -42,7 +42,7 @@ export default function ResumeDownload(){
                         >
                             <Image src={paper} alt="resume icon" />
                         </a>
-                        <h1 className="image_caption text-center mt-3 text-center mt-3"> Developer Relations </h1>
+                        <h1 className="image_caption text-center mt-3 text-center mt-3"> Developer Relations Resume </h1>
                     </div>
                 </div>
             </ScrollReveal>
