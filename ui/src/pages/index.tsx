@@ -16,8 +16,8 @@ export default function Home() {
         <Intro />
         <GeneratedQuote />
         <About />
-        <ResumeDownload />
         <Portfolio />
+        <ResumeDownload />
         <BTP />
         <Contact />
       </main>
