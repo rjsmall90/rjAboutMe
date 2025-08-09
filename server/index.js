@@ -1,16 +1,17 @@
-// require('dotenv').config();
 import cors from 'cors'
+import dotenv from 'dotenv';
 import express from 'express'
 import nodemailer from 'nodemailer'
 
 import  { fetchQuotes } from './data/quotes.js'
 import { fetchSkills } from './data/skills.js'
 
-
 const server = express()
 const port = 8000
 
 server.use(cors())
+server.use(express.json())
+dotenv.config()
 
 server.get('/quotes', async function(req, res) {
     const response = await fetchQuotes(req, res)
@@ -23,7 +24,7 @@ server.get('/skills', async function(req, res) {
 })
 
 server.post('/contact', async (req, res) => {
-  const { name, email, message } = req.body;
+  const { contact_name, contact_email, contact_message } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -34,10 +35,10 @@ server.post('/contact', async (req, res) => {
   });
 
   await transporter.sendMail({
-    from: email,
+    from: contact_email,
     to: process.env.REACT_APP_EMAIL_ADDRESS,
-    subject: `New contact from ${name}`,
-    text: message,
+    subject: `New contact from ${contact_name} - ${contact_email}`,
+    text: contact_message,
   });
 
   res.status(200).send('Message sent!');
