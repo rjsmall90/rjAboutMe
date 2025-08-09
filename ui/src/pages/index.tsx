@@ -7,6 +7,7 @@ import Contact from "./#/contact"
 import GeneratedQuote from "@/components/generated_quote";
 import ResumeDownload from "@/components/resume_download";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Footer from "@/components/footer"
 =======
 
@@ -20,12 +21,19 @@ import Footer from "@/components/footer"
 //   subsets: ["latin"],
 // });
 >>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
+=======
+// import Footer from "@/components/footer"
+>>>>>>> 3c41706 (prod build ready)
 
 export default function Home() {
   return (
     <div>
       <Navbar />
+<<<<<<< HEAD
       <main className="flex flex-col justify-center gap-8 md:gap-[32px] row-start-2 items-center w-full">
+=======
+      <main className="flex flex-col justify-center gap-[32px] row-start-2 items-center">
+>>>>>>> 3c41706 (prod build ready)
         <Intro />
         <GeneratedQuote />
         <About />
