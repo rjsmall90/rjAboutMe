@@ -13,11 +13,11 @@ export default function ResumeDownload(){
                 </ScrollReveal>
             </div>
             <ScrollReveal className="delay-300">
-                <div className="grid auto-cols-3 grid-flow-col gap-8">
+                <div className="flex flex-col sm:flex-row gap-8 overflow-x-auto sm:overflow-visible">
                     <div className="flex flex-col justify-center items-center">
                         <a 
-                            href="/public/resumes/rsmall-resume_FE.pdf" 
-                            download="/public/resumes/rsmall-resume_FE.pdf" 
+                            href="/resumes/rsmall-resume_FE.pdf" 
+                            download="/resumes/rsmall-resume_FE.pdf" 
                             className="w-36 aspect-square bg-[#F7F7F7] rounded-lg flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
                         >
                             <Image src={paper} alt="resume icon" />
@@ -26,8 +26,8 @@ export default function ResumeDownload(){
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <a 
-                            href="/public/resumes/rsmall-resume_FS.pdf" 
-                            download="/public/resumes/rsmall-resume_FS.pdf" 
+                            href="/resumes/rsmall-resume_FS.pdf" 
+                            download="/resumes/rsmall-resume_FS.pdf" 
                             className="w-36 aspect-square bg-[#F7F7F7] rounded-lg flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
                         >
                             <Image src={paper} alt="resume icon" />
@@ -36,8 +36,8 @@ export default function ResumeDownload(){
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <a 
-                            href="/public/resumes/rsmall-resume_DR.pdf" 
-                            download="/public/resumes/rsmall-resume_DR.pdf" 
+                            href="/resumes/rsmall-resume_DR.pdf" 
+                            download="/resumes/rsmall-resume_DR.pdf" 
                             className="w-36 aspect-square bg-[#F7F7F7] rounded-lg flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
                         >
                             <Image src={paper} alt="resume icon" />

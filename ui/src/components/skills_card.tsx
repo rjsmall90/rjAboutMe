@@ -40,7 +40,7 @@ export default function SkillsCard() {
 
     let keyVal=1
     return (
-        <div className="grid auto-cols-3 grid-flow-col gap-8">
+        <div className="flex flex-col sm:flex-row gap-8 overflow-x-auto sm:overflow-visible">
             {skills.map((skill: any) => {
                 return (
                     <div key={keyVal+=1} className="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl p-6 shadow-lg border-4 border-[#F72585]">
