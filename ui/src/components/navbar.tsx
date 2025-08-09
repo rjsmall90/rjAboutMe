@@ -1,9 +1,8 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import ScrollToTop from "./scroll_to_top";
 
-export default function Navbar(): JSX.Element {
+export default function Navbar(){
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect((): (() => void) => {

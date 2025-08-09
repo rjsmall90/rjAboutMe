@@ -62,6 +62,12 @@ body, html {
   background-size: cover;
 }
 
+.intro-header {
+  font-size: 10rem;
+  font-family: alteHaasBold;
+  color: #f7f7f7;
+}
+
 .page-title {
   height: 20vh;
   display: flex;
@@ -91,7 +97,7 @@ body, html {
 }
 
 .image_caption {
-  font-size: 2rem;
+  font-size: 20px;
   font-family: alteHaas;
   font-style: italic;
   color: #f7f7f7;
@@ -108,4 +114,25 @@ body, html {
 
 .top-fade {
   @apply absolute bottom-0 left-0 w-full h-[5.5rem] bg-gradient-to-b from-transparent to-[#2c2c2c] pointer-events-none;
+}
+
+.typewriter{    
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #f7f7f7; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .25em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(8, end),
+    blink-caret .80s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f7f7f7; }
 }
