@@ -19,6 +19,7 @@ export default function ContactForm(){
     }
 
     const sendEmail = async () => {
+        console.log(name, email, message)
         try {
             const response = await fetch("http://localhost:8000/contact", {
             method: 'POST',
@@ -44,6 +45,7 @@ export default function ContactForm(){
                 onChange={(e)=> setName(e.target.value)} />
             <input 
                 className="border rounded border-[#F72585] field-sizing-fixed p-2 mb-4 w-2xs text-[#F7F7F7]"
+                type="email"
                 value={email}
                 defaultValue="Enter E-mail" 
                 onChange={(e)=> setEmail(e.target.value)} />
