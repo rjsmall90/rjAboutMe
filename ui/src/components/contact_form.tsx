@@ -33,6 +33,8 @@ export default function ContactForm(){
             console.log(result.message); 
         }catch(err) {
             console.log("Unable To Send Message", err)
+        }finally {
+            setMessage("")
         }
     }
 
