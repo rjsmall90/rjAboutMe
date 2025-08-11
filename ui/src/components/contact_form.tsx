@@ -1,6 +1,8 @@
 "use client"
 import { useState } from 'react'
 
+import AlertModal from "./alert_modal"
+
 type ContactInfo = {
     contact_name: string
     contact_email: string
@@ -11,6 +13,9 @@ export default function ContactForm(){
     const [name, setName] = useState<string>("")
     const [email, setEmail] = useState<string>("")
     const [message, setMessage] = useState<string>("")
+
+    const [open, setOpen] = useState<boolean>(false)
+    const [alert, setAlert] = useState<string>("")
 
     const formInfo: ContactInfo = {
         contact_name: name,
@@ -33,13 +38,17 @@ export default function ContactForm(){
             console.log(result.message); 
         }catch(err) {
             console.log("Unable To Send Message", err)
-        }finally {
-            setMessage("")
         }
+        setName(" ")
+        setEmail(" ")
+        setMessage(" ")
+        setOpen(true)
+        setAlert("Message Sent Successfully")
     }
 
     return (
         <div className="mx-auto flex flex-col max-w-sm items-center gap-x-4 rounded-xl p-6 shadow-lg border-4 border-[#F72585] h-100 mb-8 ">
+            <AlertModal open={open} onClose={()=>setOpen(false)} content={alert}/>
             <input 
                 className="border rounded border-[#F72585] field-sizing-fixed p-2 mb-4 mt-1 w-2xs text-[#F7F7F7]"
                 value={name} 
