@@ -20,16 +20,3 @@ export default function Footer(){
         </div>
     )
 }
-
-
-// {/* <div className="inline-flex items-center justify-center w-full">
-//                 <hr className="flex-grow border-t-2 border-[#F7F7F7] mx-4" />
-//                 <div className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 left-1/2 dark:text-white dark:bg-gray-900">
-//                     <div className="flex flex-col sm:flex-row gap-6 overflow-x-auto sm:overflow-visible">
-//                         <Image className="w-15 h-15 rounded-full object-cover mx-auto bg-[#F72585]" src={igIcon} alt="Instagram" />
-//                         <Image className="w-15 h-15 rounded-full object-cover mx-auto bg-[#F72585]" src={liIcon} alt="LinkedIn" />
-//                         <Image className="w-15 h-15 rounded-full object-cover mx-auto bg-[#F72585]" src={fbIcon} alt="Facebook"/>
-//                     </div>
-//                     <hr className="flex-grow border-t-2 border-[#F7F7F7] mx-4" />
-//                 </div>
-//             </div> */}

@@ -50,7 +50,6 @@ body, html {
   background-image: url("../assets/images/BTP_logo_bgnd.png");
 }
 
-#portfolio {}
 
 .parallax {
   min-height: 100vh;
@@ -117,11 +116,11 @@ body, html {
 }
 
 .typewriter{    
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #f7f7f7; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .25em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: .15em solid #f7f7f7;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .25em;
   animation: 
     typing 2.5s steps(8, end),
     blink-caret .80s step-end infinite;
