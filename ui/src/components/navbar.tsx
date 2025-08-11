@@ -23,7 +23,7 @@ export default function Navbar(){
         isScrolled ? "h-14" : "h-28"
       }`}
     >
-      <div className="text-xl font-bold">{"{RyanTheCreator}"}</div>
+      <div className="text-xl font-bold">{"{RJTheEngineer}"}</div>
       <ul className="flex gap-6 text-lg">
         <li>
           <ScrollToTop />
