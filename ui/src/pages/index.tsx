@@ -6,7 +6,7 @@ import BTP from "./#/btp"
 import Contact from "./#/contact"
 import GeneratedQuote from "@/components/generated_quote";
 import ResumeDownload from "@/components/resume_download";
-// import Footer from "@/components/footer"
+import Footer from "@/components/footer"
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
         <ResumeDownload />
         <BTP />
         <Contact />
+        <Footer />
       </main>
     </div>
   );

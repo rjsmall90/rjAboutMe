@@ -14,7 +14,7 @@ const About = () => {
                         <h1>3 Things About Me</h1> 
                     </ScrollReveal>
                 </div>
-                <ScrollReveal className="delay-500">
+                <ScrollReveal className="delay-400">
                 <div className="grid grid-cols-1 sm:grid-flow-col sm:auto-cols-3 sm:grid-cols-none gap-8 overflow-x-auto sm:overflow-visible">
                     <div className="flex flex-col justify-center items-center">
                         <div className="w-80 aspect-[3/4] rounded-xl overflow-hidden shadow hover:scale-150 transition-transform">
