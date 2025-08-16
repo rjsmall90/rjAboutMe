@@ -20,7 +20,7 @@ export default function AlertModal({ open, onClose, content = "Alert content"}: 
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4" aria-modal="true" role="dialog" aria-labelledby="alert-content">
-      <div className="bg-[#3A0CA3] w-full max-w-md rounded-2xl p-6 shadow-2xl transform transition-all">
+      <div className="bg-[#3A0CA3] w-full max-w-md rounded-2xl p-6 shadow-2xl transform transition-all opacity-75">
         <div className="relative">
           <button onClick={onClose} aria-label="Close" className="absolute right-3 ml-4 rounded-md p-1 hover:bg-gray-100 dark:hover:bg-slate-700">
             ✕

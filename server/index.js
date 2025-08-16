@@ -3,8 +3,7 @@ import dotenv from 'dotenv';
 import express from 'express'
 import nodemailer from 'nodemailer'
 
-import  { fetchQuotes } from './data/quotes.js'
-import { fetchSkills } from './data/skills.js'
+import  { fetchQuotes, fetchSkills } from './functions/routes.js'
 
 const server = express()
 const port = 8000
@@ -31,8 +30,8 @@ server.post('/contact', async (req, res) => {
     auth: {
       user: process.env.REACT_APP_EMAIL_ADDRESS,
       pass: process.env.REACT_APP_EMAIL_PASSWORD,
-    },
-  });
+    }
+  })
 
   await transporter.sendMail({
     from: contact_email,
@@ -43,6 +42,8 @@ server.post('/contact', async (req, res) => {
 
   res.status(200).send('Message sent!');
 })
+
+
 
 server.listen(port, function() {
     console.log("Listening on " + port)
