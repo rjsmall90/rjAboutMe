@@ -15,6 +15,13 @@ _A full-stack application with a completely custom UI, animations, and backend A
 
 ---
 
+## 📸 **Follow The Entire Journey**
+> [_Figma_](https://www.figma.com/proto/xS1RkAc1sCVcnH2R41NHNd/portfolio-draft?node-id=0-1&t=aw24DxPlIp2tnpvk-1)
+> [ Trello Project Board ](https://trello.com/invite/b/688c2343d23c3465b1d91cd4/ATTI77605251430f70f39e99f7a571a8ab96F9723C73/ui-components)
+
+---
+
+
 ## 🚀 **Overview**
 This project is a full-stack application built with **Next.js** and **TypeScript** on the frontend, paired with an **Express.js** backend.  
 It features **entirely custom-built UI components, forms, and animations** — no prebuilt templates.  
