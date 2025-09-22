@@ -50,17 +50,10 @@ body, html {
   background-image: url("../assets/images/BTP_logo_bgnd.png");
 }
 
-<<<<<<< HEAD
 
 .parallax {
   min-height: 100vh;
   width: 100%;
-=======
-#portfolio {}
-
-.parallax {
-  min-height: 100vh;
->>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
   
   background-attachment: fixed;
   background-position: center;
@@ -68,10 +61,6 @@ body, html {
   background-size: cover;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3c41706 (prod build ready)
 .intro-header {
   font-size: 10rem;
   font-family: alteHaasBold;
@@ -80,10 +69,8 @@ body, html {
 
 .page-title {
   height: 20vh;
-=======
 .page-title {
   height: 100vh;
->>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +89,6 @@ body, html {
   padding: 2rem;
 }
 
-<<<<<<< HEAD
 .quote {
   font-size: 2rem;
   font-family: alteHaas;
@@ -125,39 +111,18 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-=======
-.segment {
-  background-color: #2c2c2c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  font-size: 7rem;
-  font-family: alteHaasBold;
-  color: #f7f7f7;
->>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
 }
 
 .top-fade {
   @apply absolute bottom-0 left-0 w-full h-[5.5rem] bg-gradient-to-b from-transparent to-[#2c2c2c] pointer-events-none;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .typewriter{    
   overflow: hidden;
   border-right: .15em solid #f7f7f7;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .25em;
-=======
-.typewriter{    
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #f7f7f7; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .25em; /* Adjust as needed */
->>>>>>> 3c41706 (prod build ready)
   animation: 
     typing 2.5s steps(8, end),
     blink-caret .80s step-end infinite;
@@ -171,7 +136,6 @@ body, html {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #f7f7f7; }
-<<<<<<< HEAD
 }
 
 /* Mobile styles */
@@ -229,11 +193,5 @@ body, html {
     font-size: 1rem;
   }
 }
-=======
-.bottom-fade {
-  @apply absolute bottom-0 left-0 w-full h-[5.5rem] bg-gradient-to-t to-transparent to-[#2c2c2c] pointer-events-none;
 }
->>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
-=======
-}
->>>>>>> 3c41706 (prod build ready)
+
