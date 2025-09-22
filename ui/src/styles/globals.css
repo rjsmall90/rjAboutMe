@@ -12,13 +12,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #2c2c2c;
-    --foreground: #ededed;
-  }
-}
-
 @font-face {
    font-family: alteHaas;
    src: url(../assets/fonts/AlteHaasGroteskRegular.ttf);
@@ -50,7 +43,6 @@ body, html {
   background-image: url("../assets/images/BTP_logo_bgnd.png");
 }
 
-
 .parallax {
   min-height: 100vh;
   width: 100%;
@@ -69,8 +61,6 @@ body, html {
 
 .page-title {
   height: 20vh;
-.page-title {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,5 +183,3 @@ body, html {
     font-size: 1rem;
   }
 }
-}
-
