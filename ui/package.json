@@ -12,25 +12,11 @@
   "dependencies": {
     "@cloudflare/next-on-pages": "^1.13.16",
     "@heroicons/react": "^2.2.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "dotenv": "^17.2.1",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.34.3"
-=======
-    "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
->>>>>>> dfba3d4 (fade-in transitions and css cleanup complete)
-=======
-    "dotenv": "^17.2.1",
-    "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sharp": "^0.34.3"
->>>>>>> 3c41706 (prod build ready)
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
