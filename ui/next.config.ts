@@ -1,9 +1,12 @@
-import { withOpenNext } from '@opennext/adapter-cloudflare';
+import cloudflareAdapter from '@opennextjs/cloudflare';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // static export, required for OpenNext
-  experimental: { appDir: true }, // optional if using app directory
+  experimental: {
+    appDir: true, 
+  },
+  output: 'standalone', 
+  adapter: cloudflareAdapter(),
 };
 
-export default withOpenNext(nextConfig);
+export default nextConfig;
