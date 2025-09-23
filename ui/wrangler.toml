@@ -1,5 +1,8 @@
 name = "rj-portfolio-site"
-compatibility_date = "2025-09-22"
+main = "out/_worker.js" # OpenNext generates a Worker entry here
+compatibility_date = "2025-09-22" # today’s date
+type = "javascript"
 
-[build]
-command = "npx @cloudflare/next-on-pages build"
+[site]
+bucket = "./out"
+entry-point = "workers-site"

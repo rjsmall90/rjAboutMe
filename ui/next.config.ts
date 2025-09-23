@@ -1,8 +1,9 @@
-import type { NextConfig } from "next";
+import { withOpenNext } from '@opennext/adapter-cloudflare';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // static export, required for OpenNext
+  experimental: { appDir: true }, // optional if using app directory
 };
 
-export default nextConfig;
+export default withOpenNext(nextConfig);
