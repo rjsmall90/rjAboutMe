@@ -1,10 +1,8 @@
-import cloudflareAdapter from '@opennextjs/cloudflare';
+import type { NextConfig } from "next";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  experimental: { appDir: true },
-  adapter: cloudflareAdapter(),
+const nextConfig: NextConfig = {
+  /* config options here */
+  reactStrictMode: true,
 };
 
 export default nextConfig;
