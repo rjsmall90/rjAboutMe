@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "npx @opennextjs/opennext build",
     "deploy": "wrangler publish",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@opennextjs/cloudflare": "^1.8.3",
     "dotenv": "^17.2.1",
     "next": "15.3.4",
     "react": "^19.0.0",

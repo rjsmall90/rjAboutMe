@@ -1,8 +1,9 @@
-name = "rj-portfolio-site"
-main = "out/_worker.js" # OpenNext generates a Worker entry here
-compatibility_date = "2025-09-22" # today’s date
-type = "javascript"
+name = "my-next-app"
+compatibility_date = "2024-09-01"
 
 [site]
-bucket = "./out"
-entry-point = "workers-site"
+bucket = ".opennext/standalone"
+entry-point = ".opennext/worker"
+
+[build]
+command = "npm run build"
