@@ -6,7 +6,7 @@ import family_pic from "../../assets/images/family_man.png"
 import ry_and_kids from "../../assets/images/why_we_do_it.png"
 import solo_shot from "../../assets/images/well_actually.png"
 
-const About = () => {
+const About: React.FC = () => {
     return (
         <div id="about-me" className="parallax relative">
                 <div className="page-title">
@@ -20,7 +20,8 @@ const About = () => {
                         <div className="w-80 aspect-[3/4] rounded-xl overflow-hidden shadow hover:scale-150 transition-transform">
                                 <Image  
                                     src={family_pic}
-                                    alt="Me and the kids" />
+                                    alt="Ryan, with his daughter and nephew walking towards a Chuck E. Cheese"
+                                    preload="true" />
                         </div>
                             <h1 className="image_caption typewriter"> I&apos;m A Father..</h1>
                     </div>
@@ -28,7 +29,8 @@ const About = () => {
                         <div className="w-80 aspect-[3/4] rounded-xl overflow-hidden shadow hover:scale-150 transition-transform">
                                 <Image  
                                     src={solo_shot}
-                                    alt="Me With A Microphone" />
+                                    alt="Ryan at a BTP hosted workshop holding a microphone"
+                                    preload="true"  />
                         </div>
                             <h1 className="image_caption typewriter">An Entrepeneur..</h1>
                     </div>
@@ -36,7 +38,8 @@ const About = () => {
                         <div className="w-80 aspect-[3/4] rounded-xl overflow-hidden shadow hover:scale-150 transition-transform">
                             <Image  
                                 src={ry_and_kids}
-                                alt="Co-Founders and their Students" />
+                                alt="Co-Founders Ian & Ryan with the students of Boys Latin Charter School"
+                                preload="true"  />
                         </div>
                             <h1 className="image_caption typewriter">..And Someone Who Likes <br></br> To Give Back When I Can</h1>
                     </div>
