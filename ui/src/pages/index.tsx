@@ -1,26 +1,10 @@
-import Navbar from "../components/navbar"
-import Intro from "./#/intro"
-import About from "./#/about"
-import Portfolio from "./#/portfolio"
-import BTP from "./#/btp"
-import Contact from "./#/contact"
-import GeneratedQuote from "@/components/generated_quote";
-import ResumeDownload from "@/components/resume_download";
-import Footer from "@/components/footer"
+import Home from "./home";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <main className="flex flex-col justify-center gap-8 md:gap-[32px] row-start-2 items-center w-full">
-        <Intro />
-        <GeneratedQuote />
-        <About />
-        <Portfolio />
-        <ResumeDownload />
-        <BTP />
-        <Contact />
-        <Footer />
+        <Home />
       </main>
     </div>
   );
