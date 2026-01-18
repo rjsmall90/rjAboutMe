@@ -115,14 +115,16 @@ body, html {
   @apply absolute bottom-0 left-0 w-full h-[5.5rem] bg-gradient-to-b from-transparent to-[#2c2c2c] pointer-events-none;
 }
 
-.typewriter{    
+.typewriter {
+  display: inline-block;    
   overflow: hidden;
   border-right: .15em solid #f7f7f7;
   white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .25em;
+  margin: 0;
+  letter-spacing: .10em;
+  width: 0; /* ADD THIS ONE LINE */
   animation: 
-    typing 2.5s steps(8, end),
+    typing 2.5s steps(8, end) forwards, /* ADD 'forwards' HERE */
     blink-caret .80s step-end infinite;
 }
 
