@@ -1,6 +1,6 @@
 import SplashPage from "./#/splash_page";
-import HomePage from "./home";
-import SplashToNavbar from "@/components/splash_navbar_transition";
+// import HomePage from "./home";
+// import SplashToNavbar from "@/components/splash_navbar_transition";
 
 export default function Home() {
   return (
