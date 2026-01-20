@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import ScrollToTop from "./scroll_to_top";
 import HomePage from "../pages/home"
-import Home from "@/pages";
+// import Home from "@/pages";
 
 function SplashToNavbar() {
   const titles = ["Father?", "Designer?", "Co-Founder?", "...Engineer"];
