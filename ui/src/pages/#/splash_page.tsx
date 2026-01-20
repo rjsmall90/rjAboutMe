@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 function SplashPage() {
-    const titles = ["Father?", "Designer?", "Co-Founder?", "Creator?","...Engineer"];
+    const titles = ["This Page..", "Is Under Construction", "Back Up Soon"];
     const [ currentTitle, setCurrentTitle ] = useState(0);
     
     const handleAnimationEnd = (event: React.AnimationEvent<HTMLHeadingElement>) => {
@@ -24,12 +24,12 @@ function SplashPage() {
         className="page-title typewriter"> 
             {titles[currentTitle]} 
         </p>
-        )
-                    
+        )             
     }
+
     return (
         <div className="flex flex-col justify-center items-center h-screen w-screen bg-[#2c2c2c]">
-            <h3 className="inline-block text-lg text-white page-title">{'{'}RJThe{title()}{'}'}</h3>
+            <h3 className="inline-block text-lg text-white page-title">{'{'}{title()}{'}'}</h3>
         </div>
   );
 }
